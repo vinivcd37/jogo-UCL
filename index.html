@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Champions League · Dashboard ao vivo</title>
+<style>
+:root{--bg:#f4f6fb;--card:#fff;--tx:#0b1530;--mu:#5b6682;--ac:#1d4ed8;--bd:#e3e8f3;--ok:#16a34a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1126;--card:#121b38;--tx:#eaf0ff;--mu:#93a0c4;--ac:#6ea0ff;--bd:#223059}}
+:root[data-theme="dark"]{--bg:#0a1126;--card:#121b38;--tx:#eaf0ff;--mu:#93a0c4;--ac:#6ea0ff;--bd:#223059}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:1000px;margin:0 auto;padding:20px 16px 40px}
+header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+h1{font-size:22px;margin:0}
+.live{font-size:13px;color:var(--mu);display:flex;align-items:center;gap:6px}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--mu)}
+.on .dot{background:var(--ok);box-shadow:0 0 0 4px #16a34a33;animation:p 1.6s infinite}
+@keyframes p{50%{opacity:.4}}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:18px 0}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:14px 16px}
+.k{font-size:28px;font-weight:700}.l{font-size:12px;color:var(--mu)}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+select,input{background:var(--card);color:var(--tx);border:1px solid var(--bd);border-radius:10px;padding:8px 10px;font-size:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:720px){.grid{grid-template-columns:1fr}}
+h2{font-size:15px;margin:0 0 10px}
+.bar{display:flex;align-items:center;gap:8px;font-size:13px;margin:5px 0;cursor:pointer}
+.bar:hover b{opacity:.8}
+.bar span.n{width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar b{display:block;height:14px;background:var(--ac);border-radius:4px;min-width:3px}
+.sel .n{font-weight:700}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:8px 6px;text-align:left;border-bottom:1px solid var(--bd);white-space:nowrap}
+th{color:var(--mu);font-weight:600;font-size:12px}
+.sc{font-weight:700}.w{color:var(--ok);font-weight:700}
+.empty{color:var(--mu);padding:18px;text-align:center}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>⚽ UEFA Champions League</h1>
+<div class="live" id="live"><span class="dot"></span><span id="st">Carregando…</span></div>
+</header>
+<div class="kpis">
+<div class="card"><div class="k" id="k1">–</div><div class="l">Partidas</div></div>
+<div class="card"><div class="k" id="k2">–</div><div class="l">Gols marcados</div></div>
+<div class="card"><div class="k" id="k3">–</div><div class="l">Média de gols/jogo</div></div>
+<div class="card"><div class="k" id="k4">–</div><div class="l">Última partida</div></div>
+</div>
+<div class="filters">
+<select id="fs"><option value="">Todas as temporadas</option></select>
+<select id="fst"><option value="">Todas as fases</option></select>
+<input id="fq" placeholder="Buscar clube…">
+</div>
+<div class="grid">
+<div class="card"><h2>Títulos (finais no banco) — clique para filtrar</h2><div id="titles"></div></div>
+<div class="card"><h2>Gols por temporada</h2><div id="goals"></div></div>
+</div>
+<div class="card" style="margin-top:12px"><h2>Partidas</h2>
+<div class="scroll"><table><thead><tr><th>Data</th><th>Fase</th><th>Mandante</th><th>Placar</th><th>Visitante</th><th>Local</th></tr></thead><tbody id="rows"></tbody></table></div>
+<div class="empty" id="empty" hidden>Nenhuma partida encontrada.</div></div>
+</main>
+<script>
+let M=[],club="";
+const $=id=>document.getElementById(id);
+const fmt=d=>d?d.split("-").reverse().join("/"):"–";
+function opts(sel,vals,first){const cur=sel.value;sel.innerHTML=`<option value="">${first}</option>`+vals.map(v=>`<option>${v}</option>`).join("");sel.value=vals.includes(cur)?cur:""}
+function winner(m){if(m.hg>m.ag)return m.home;if(m.ag>m.hg)return m.away;if(m.pen){const[a,b]=m.pen.split("-").map(Number);return a>b?m.home:m.away}return null}
+function bars(el,data,click){const mx=Math.max(1,...data.map(d=>d[1]));
+el.innerHTML=data.length?data.map(([n,v])=>`<div class="bar ${click&&n===club?"sel":""}" data-n="${n}"><span class="n">${n}</span><b style="width:${v/mx*60}%"></b><span>${v}</span></div>`).join(""):'<div class="empty">Sem dados</div>';
+if(click)el.querySelectorAll(".bar").forEach(b=>b.onclick=()=>{club=club===b.dataset.n?"":b.dataset.n;$("fq").value=club;render()})}
+function render(){
+const seasons=[...new Set(M.map(m=>m.season))].sort().reverse(),stages=[...new Set(M.map(m=>m.stage))];
+opts($("fs"),seasons,"Todas as temporadas");opts($("fst"),stages,"Todas as fases");
+const s=$("fs").value,st=$("fst").value,q=$("fq").value.trim().toLowerCase();
+const F=M.filter(m=>(!s||m.season===s)&&(!st||m.stage===st)&&(!q||(m.home+m.away).toLowerCase().includes(q)));
+const g=F.reduce((a,m)=>a+m.hg+m.ag,0);
+$("k1").textContent=F.length;$("k2").textContent=g;$("k3").textContent=F.length?(g/F.length).toFixed(2):"–";
+const last=[...M].sort((a,b)=>b.date.localeCompare(a.date))[0];
+$("k4").textContent=last?`${last.home} ${last.hg}-${last.ag} ${last.away}`:"–";$("k4").style.fontSize="15px";
+const t={};F.filter(m=>m.stage==="Final").forEach(m=>{const w=winner(m);if(w)t[w]=(t[w]||0)+1});
+bars($("titles"),Object.entries(t).sort((a,b)=>b[1]-a[1]),true);
+const gs={};F.forEach(m=>gs[m.season]=(gs[m.season]||0)+m.hg+m.ag);
+bars($("goals"),Object.entries(gs).sort((a,b)=>b[0].localeCompare(a[0])));
+const R=[...F].sort((a,b)=>b.date.localeCompare(a.date));
+$("rows").innerHTML=R.map(m=>{const w=winner(m);return`<tr><td>${fmt(m.date)}</td><td>${m.stage}</td><td class="${w===m.home?"w":""}">${m.home}</td><td class="sc">${m.status==="LIVE"?'<small style="color:#dc2626">● AO VIVO </small>':""}${m.hg} - ${m.ag}${m.pen?` <small>(${m.pen} pên.)</small>`:""}${m.aet?" <small>pror.</small>":""}</td><td class="${w===m.away?"w":""}">${m.away}</td><td>${m.venue||""}</td></tr>`}).join("");
+$("empty").hidden=R.length>0;
+}
+["fs","fst"].forEach(i=>$(i).onchange=render);
+$("fq").oninput=()=>{club=$("fq").value;render()};
+async function load(){
+try{const r=await fetch("data/matches.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error(r.status);
+const j=await r.json();M=Object.entries(j.matches).map(([id,m])=>({id,...m}));
+$("live").classList.add("on");$("st").textContent=`${M.length} partidas · dados de ${new Date(j.updated).toLocaleString("pt-BR")} · verificado ${new Date().toLocaleTimeString("pt-BR")}`;render()}
+catch(e){$("live").classList.remove("on");$("st").textContent="Erro ao carregar dados: "+e.message}}
+load();setInterval(load,60000);
+</script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+{
+ "updated": "2026-10-10T00:00:00Z",
+ "matches": {
+  "final-2010": {
+   "season": "2009/10",
+   "date": "2010-05-22",
+   "stage": "Final",
+   "home": "Inter",
+   "away": "Bayern",
+   "hg": 2,
+   "ag": 0,
+   "status": "FT"
+  },
+  "final-2011": {
+   "season": "2010/11",
+   "date": "2011-05-28",
+   "stage": "Final",
+   "home": "Barcelona",
+   "away": "Man United",
+   "hg": 3,
+   "ag": 1,
+   "status": "FT"
+  },
+  "final-2012": {
+   "season": "2011/12",
+   "date": "2012-05-19",
+   "stage": "Final",
+   "home": "Bayern",
+   "away": "Chelsea",
+   "hg": 1,
+   "ag": 1,
+   "status": "FT",
+   "pen": "3-4"
+  },
+  "final-2013": {
+   "season": "2012/13",
+   "date": "2013-05-25",
+   "stage": "Final",
+   "home": "Bayern",
+   "away": "Dortmund",
+   "hg": 2,
+   "ag": 1,
+   "status": "FT"
+  },
+  "final-2014": {
+   "season": "2013/14",
+   "date": "2014-05-24",
+   "stage": "Final",
+   "home": "Real Madrid",
+   "away": "Atlético de Madrid",
+   "hg": 4,
+   "ag": 1,
+   "status": "FT",
+   "aet": true
+  },
+  "final-2015": {
+   "season": "2014/15",
+   "date": "2015-06-06",
+   "stage": "Final",
+   "home": "Barcelona",
+   "away": "Juventus",
+   "hg": 3,
+   "ag": 1,
+   "status": "FT"
+  },
+  "final-2016": {
+   "season": "2015/16",
+   "date": "2016-05-28",
+   "stage": "Final",
+   "home": "Real Madrid",
+   "away": "Atlético de Madrid",
+   "hg": 1,
+   "ag": 1,
+   "status": "FT",
+   "pen": "5-3"
+  },
+  "final-2017": {
+   "season": "2016/17",
+   "date": "2017-06-03",
+   "stage": "Final",
+   "home": "Juventus",
+   "away": "Real Madrid",
+   "hg": 1,
+   "ag": 4,
+   "status": "FT"
+  },
+  "final-2018": {
+   "season": "2017/18",
+   "date": "2018-05-26",
+   "stage": "Final",
+   "home": "Real Madrid",
+   "away": "Liverpool",
+   "hg": 3,
+   "ag": 1,
+   "status": "FT"
+  },
+  "final-2019": {
+   "season": "2018/19",
+   "date": "2019-06-01",
+   "stage": "Final",
+   "home": "Tottenham",
+   "away": "Liverpool",
+   "hg": 0,
+   "ag": 2,
+   "status": "FT"
+  },
+  "final-2020": {
+   "season": "2019/20",
+   "date": "2020-08-23",
+   "stage": "Final",
+   "home": "PSG",
+   "away": "Bayern",
+   "hg": 0,
+   "ag": 1,
+   "status": "FT"
+  },
+  "final-2021": {
+   "season": "2020/21",
+   "date": "2021-05-29",
+   "stage": "Final",
+   "home": "Man City",
+   "away": "Chelsea",
+   "hg": 0,
+   "ag": 1,
+   "status": "FT"
+  },
+  "final-2022": {
+   "season": "2021/22",
+   "date": "2022-05-28",
+   "stage": "Final",
+   "home": "Liverpool",
+   "away": "Real Madrid",
+   "hg": 0,
+   "ag": 1,
+   "status": "FT"
+  },
+  "final-2023": {
+   "season": "2022/23",
+   "date": "2023-06-10",
+   "stage": "Final",
+   "home": "Man City",
+   "away": "Inter",
+   "hg": 1,
+   "ag": 0,
+   "status": "FT"
+  },
+  "final-2024": {
+   "season": "2023/24",
+   "date": "2024-06-01",
+   "stage": "Final",
+   "home": "Dortmund",
+   "away": "Real Madrid",
+   "hg": 0,
+   "ag": 2,
+   "status": "FT"
+  },
+  "final-2025": {
+   "season": "2024/25",
+   "date": "2025-05-31",
+   "stage": "Final",
+   "home": "PSG",
+   "away": "Inter",
+   "hg": 5,
+   "ag": 0,
+   "status": "FT"
+  },
+  "seed-2627-AEKAtenas-LASK": {
+   "season": "2026/27",
+   "date": "2026-09-08",
+   "stage": "Fase de liga",
+   "home": "AEK Atenas",
+   "away": "LASK",
+   "hg": 1,
+   "ag": 0,
+   "status": "FT"
+  },
+  "seed-2627-ClubBrugge-AstonVilla": {
+   "season": "2026/27",
+   "date": "2026-09-08",
+   "stage": "Fase de liga",
+   "home": "Club Brugge",
+   "away": "Aston Villa",
+   "hg": 2,
+   "ag": 3,
+   "status": "FT"
+  },
+  "seed-2627-Dortmund-Villarreal": {
+   "season": "2026/27",
+   "date": "2026-09-08",
+   "stage": "Fase de liga",
+   "home": "Dortmund",
+   "away": "Villarreal",
+   "hg": 3,
+   "ag": 2,
+   "status": "FT"
+  },
+  "seed-2627-Porto-ManCity": {
+   "season": "2026/27",
+   "date": "2026-09-08",
+   "stage": "Fase de liga",
+   "home": "Porto",
+   "away": "Man City",
+   "hg": 0,
+   "ag": 2,
+   "status": "FT"
+  },
+  "seed-2627-Lille-RealBetis": {
+   "season": "2026/27",
+   "date": "2026-09-08",
+   "stage": "Fase de liga",
+   "home": "Lille",
+   "away": "Real Betis",
+   "hg": 2,
+   "ag": 3,
+   "status": "FT"
+  },
+  "seed-2627-RealMadrid-Inter": {
+   "season": "2026/27",
+   "date": "2026-09-08",
+   "stage": "Fase de liga",
+   "home": "Real Madrid",
+   "away": "Inter",
+   "hg": 2,
+   "ag": 1,
+   "status": "FT"
+  },
+  "seed-2627-Barcelona-Feyenoord": {
+   "season": "2026/27",
+   "date": "2026-09-09",
+   "stage": "Fase de liga",
+   "home": "Barcelona",
+   "away": "Feyenoord",
+   "hg": 5,
+   "ag": 1,
+   "status": "FT"
+  },
+  "seed-2627-Liverpool-AtléticodeMadrid": {
+   "season": "2026/27",
+   "date": "2026-09-09",
+   "stage": "Fase de liga",
+   "home": "Liverpool",
+   "away": "Atlético de Madrid",
+   "hg": 2,
+   "ag": 1,
+   "status": "FT"
+  },
+  "seed-2627-PSG-SlovanBratislava": {
+   "season": "2026/27",
+   "date": "2026-09-09",
+   "stage": "Fase de liga",
+   "home": "PSG",
+   "away": "Slovan Bratislava",
+   "hg": 6,
+   "ag": 1,
+   "status": "FT"
+  },
+  "seed-2627-SportingCP-Galatasaray": {
+   "season": "2026/27",
+   "date": "2026-09-09",
+   "stage": "Fase de liga",
+   "home": "Sporting CP",
+   "away": "Galatasaray",
+   "hg": 3,
+   "ag": 1,
+   "status": "FT"
+  },
+  "seed-2627-Napoli-Arsenal": {
+   "season": "2026/27",
+   "date": "2026-09-09",
+   "stage": "Fase de liga",
+   "home": "Napoli",
+   "away": "Arsenal",
+   "hg": 0,
+   "ag": 1,
+   "status": "FT"
+  },
+  "seed-2627-Fenerbahçe-Roma": {
+   "season": "2026/27",
+   "date": "2026-09-10",
+   "stage": "Fase de liga",
+   "home": "Fenerbahçe",
+   "away": "Roma",
+   "hg": 1,
+   "ag": 1,
+   "status": "FT"
+  },
+  "seed-2627-PSV-ShakhtarDonetsk": {
+   "season": "2026/27",
+   "date": "2026-09-10",
+   "stage": "Fase de liga",
+   "home": "PSV",
+   "away": "Shakhtar Donetsk",
+   "hg": 1,
+   "ag": 1,
+   "status": "FT"
+  },
+  "seed-2627-Como-RBLeipzig": {
+   "season": "2026/27",
+   "date": "2026-09-10",
+   "stage": "Fase de liga",
+   "home": "Como",
+   "away": "RB Leipzig",
+   "hg": 4,
+   "ag": 1,
+   "status": "FT"
+  },
+  "seed-2627-Bayern-Bodø/Glimt": {
+   "season": "2026/27",
+   "date": "2026-09-10",
+   "stage": "Fase de liga",
+   "home": "Bayern",
+   "away": "Bodø/Glimt",
+   "hg": 5,
+   "ag": 0,
+   "status": "FT"
+  },
+  "seed-2627-ManUnited-Sabah": {
+   "season": "2026/27",
+   "date": "2026-09-10",
+   "stage": "Fase de liga",
+   "home": "Man United",
+   "away": "Sabah",
+   "hg": 4,
+   "ag": 0,
+   "status": "FT"
+  },
+  "seed-2627-SlaviaPraga-Lens": {
+   "season": "2026/27",
+   "date": "2026-09-10",
+   "stage": "Fase de liga",
+   "home": "Slavia Praga",
+   "away": "Lens",
+   "hg": 2,
+   "ag": 3,
+   "status": "FT"
+  }
+ }
+}

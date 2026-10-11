@@ -4,6 +4,11 @@ on:
     - cron: "*/10 15-23 * * 2-4"   # terça a quinta, 15h-23h UTC: a cada 10 min
     - cron: "0 */3 * * *"          # demais horarios: a cada 3 h
   workflow_dispatch:
+    inputs:
+      seasons:
+        description: "Temporadas (ano de inicio, separados por virgula). Vazio = atual. Ex: 2021,2022,2023,2024,2025"
+        required: false
+        default: ""
 permissions:
   contents: write
 concurrency: update-matches
@@ -15,6 +20,7 @@ jobs:
       - run: python scripts/update.py
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+          SEASONS: ${{ github.event.inputs.seasons }}
       - name: Commit se mudou
         run: |
           git config user.name "bot"; git config user.email "bot@users.noreply.github.com"

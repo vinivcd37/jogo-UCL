@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Busca jogos da Champions na football-data.org e atualiza data/matches.json.
 Requer a variavel FOOTBALL_DATA_TOKEN. SEASONS=2025,2026 (ano de inicio) opcional."""
-import json, os, sys, datetime as dt, urllib.request, urllib.error
+import json, os, sys, time, datetime as dt, urllib.request, urllib.error
 from pathlib import Path
 
 OUT = Path(__file__).resolve().parent.parent / "data" / "matches.json"
-STAGES = {"LEAGUE_STAGE": "Fase de liga", "PLAYOFFS": "Playoffs", "LAST_16": "Oitavas",
+STAGES = {"LEAGUE_STAGE": "Fase de liga", "GROUP_STAGE": "Fase de grupos", "ROUND_OF_16": "Oitavas", "PLAYOFFS": "Playoffs", "LAST_16": "Oitavas",
           "QUARTER_FINALS": "Quartas", "SEMI_FINALS": "Semifinal", "FINAL": "Final"}
 ALIASES = {"Paris Saint-Germain": "PSG", "Paris Saint-Germain FC": "PSG", "FC Bayern München": "Bayern",
            "Bayern Munich": "Bayern", "Manchester City FC": "Man City", "Manchester United FC": "Man United",
@@ -50,20 +50,27 @@ def convert(m, season):
 def main():
     now = dt.date.today()
     default = now.year if now.month >= 7 else now.year - 1
-    seasons = [int(x) for x in os.environ.get("SEASONS", str(default)).split(",")]
+    seasons = [int(x) for x in (os.environ.get("SEASONS") or str(default)).split(",")]
     old = json.load(open(OUT)) if OUT.exists() else {"matches": {}}
     matches = dict(old["matches"])
-    for y in seasons:
+    ok = 0
+    for n, y in enumerate(seasons):
         label = f"{y}/{str(y + 1)[2:]}"
+        if n and not os.environ.get("MOCK_FILE"):
+            time.sleep(7)  # plano gratis: 10 requisicoes por minuto
         try:
             raw = fetch(y)
         except urllib.error.HTTPError as e:
-            sys.exit(f"Erro HTTP {e.code} na temporada {y}: {e.read()[:200]!r}")
+            print(f"AVISO: temporada {label} ignorada (HTTP {e.code}): {e.read()[:160]!r}")
+            continue
+        ok += 1
         matches = {k: v for k, v in matches.items() if v["season"] != label}  # substitui a temporada
         for m in raw:
             c = convert(m, y)
             if c:
                 matches[c[0]] = c[1]
+    if not ok:
+        sys.exit("Nenhuma temporada foi carregada.")
     if matches == old["matches"]:
         print("Sem mudancas."); return
     OUT.write_text(json.dumps({"updated": dt.datetime.now(dt.timezone.utc).replace(tzinfo=None).isoformat(timespec="seconds") + "Z",

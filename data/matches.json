@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T00:02:18Z",
+ "updated": "2026-10-13T18:51:13Z",
  "matches": {
   "fd-575323": {
    "season": "2026/27",
@@ -180,6 +180,26 @@
    "status": "FT",
    "hg": 2,
    "ag": 3
+  },
+  "fd-575341": {
+   "season": "2026/27",
+   "date": "2026-10-13",
+   "stage": "Fase de liga",
+   "home": "RC Lens",
+   "away": "Sporting CP",
+   "status": "FT",
+   "hg": 0,
+   "ag": 2
+  },
+  "fd-575342": {
+   "season": "2026/27",
+   "date": "2026-10-13",
+   "stage": "Fase de liga",
+   "home": "Sabah FK",
+   "away": "Slavia Praha",
+   "status": "FT",
+   "hg": 2,
+   "ag": 0
   },
   "final-2010": {
    "season": "2009/10",

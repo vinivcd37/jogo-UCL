@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T18:51:13Z",
+ "updated": "2026-10-13T20:33:18Z",
  "matches": {
   "fd-575323": {
    "season": "2026/27",
@@ -200,6 +200,76 @@
    "status": "FT",
    "hg": 2,
    "ag": 0
+  },
+  "fd-575343": {
+   "season": "2026/27",
+   "date": "2026-10-13",
+   "stage": "Fase de liga",
+   "home": "Inter",
+   "away": "Club Brugge",
+   "status": "LIVE",
+   "hg": 1,
+   "ag": 2
+  },
+  "fd-575344": {
+   "season": "2026/27",
+   "date": "2026-10-13",
+   "stage": "Fase de liga",
+   "home": "Galatasaray",
+   "away": "Barcelona",
+   "status": "LIVE",
+   "hg": 1,
+   "ag": 4
+  },
+  "fd-575345": {
+   "season": "2026/27",
+   "date": "2026-10-13",
+   "stage": "Fase de liga",
+   "home": "Atlético de Madrid",
+   "away": "Man United",
+   "status": "LIVE",
+   "hg": 2,
+   "ag": 0
+  },
+  "fd-575346": {
+   "season": "2026/27",
+   "date": "2026-10-13",
+   "stage": "Fase de liga",
+   "home": "Arsenal",
+   "away": "Lille",
+   "status": "LIVE",
+   "hg": 2,
+   "ag": 0
+  },
+  "fd-575347": {
+   "season": "2026/27",
+   "date": "2026-10-13",
+   "stage": "Fase de liga",
+   "home": "Viking",
+   "away": "Bayern",
+   "status": "LIVE",
+   "hg": 2,
+   "ag": 2
+  },
+  "fd-575348": {
+   "season": "2026/27",
+   "date": "2026-10-13",
+   "stage": "Fase de liga",
+   "home": "RB Leipzig",
+   "away": "PSV",
+   "status": "LIVE",
+   "hg": 0,
+   "ag": 0
+  },
+  "fd-575349": {
+   "season": "2026/27",
+   "date": "2026-10-13",
+   "stage": "Fase de liga",
+   "home": "Villarreal",
+   "away": "Napoli",
+   "status": "LIVE",
+   "hg": 2,
+   "ag": 1
   },
   "final-2010": {
    "season": "2009/10",

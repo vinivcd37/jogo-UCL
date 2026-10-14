@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T19:14:03Z",
+ "updated": "2026-10-14T22:22:44Z",
  "matches": {
   "fd-575323": {
    "season": "2026/27",
@@ -297,9 +297,9 @@
    "stage": "Fase de liga",
    "home": "Roma",
    "away": "Real Madrid",
-   "status": "LIVE",
-   "hg": 0,
-   "ag": 0
+   "status": "FT",
+   "hg": 3,
+   "ag": 4
   },
   "fd-575353": {
    "season": "2026/27",
@@ -307,9 +307,9 @@
    "stage": "Fase de liga",
    "home": "Man City",
    "away": "PSG",
-   "status": "LIVE",
-   "hg": 0,
-   "ag": 0
+   "status": "FT",
+   "hg": 2,
+   "ag": 4
   },
   "fd-575354": {
    "season": "2026/27",
@@ -317,8 +317,8 @@
    "stage": "Fase de liga",
    "home": "Bodø/Glimt",
    "away": "Dortmund",
-   "status": "LIVE",
-   "hg": 0,
+   "status": "FT",
+   "hg": 1,
    "ag": 0
   },
   "fd-575355": {
@@ -327,8 +327,8 @@
    "stage": "Fase de liga",
    "home": "Aston Villa",
    "away": "Fenerbahçe",
-   "status": "LIVE",
-   "hg": 0,
+   "status": "FT",
+   "hg": 6,
    "ag": 0
   },
   "fd-575356": {
@@ -337,9 +337,9 @@
    "stage": "Fase de liga",
    "home": "Real Betis",
    "away": "Porto",
-   "status": "LIVE",
-   "hg": 0,
-   "ag": 0
+   "status": "FT",
+   "hg": 3,
+   "ag": 2
   },
   "fd-575357": {
    "season": "2026/27",
@@ -347,9 +347,9 @@
    "stage": "Fase de liga",
    "home": "Shaktar",
    "away": "PAE AEK",
-   "status": "LIVE",
-   "hg": 0,
-   "ag": 0
+   "status": "FT",
+   "hg": 3,
+   "ag": 1
   },
   "fd-575358": {
    "season": "2026/27",
@@ -357,9 +357,9 @@
    "stage": "Fase de liga",
    "home": "Sl. Bratislava",
    "away": "Stuttgart",
-   "status": "LIVE",
+   "status": "FT",
    "hg": 0,
-   "ag": 0
+   "ag": 3
   },
   "final-2010": {
    "season": "2009/10",

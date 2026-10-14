@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T19:09:50Z",
+ "updated": "2026-10-14T19:14:03Z",
  "matches": {
   "fd-575323": {
    "season": "2026/27",
@@ -180,6 +180,96 @@
    "status": "FT",
    "hg": 2,
    "ag": 3
+  },
+  "fd-575341": {
+   "season": "2026/27",
+   "date": "2026-10-13",
+   "stage": "Fase de liga",
+   "home": "RC Lens",
+   "away": "Sporting CP",
+   "status": "FT",
+   "hg": 0,
+   "ag": 2
+  },
+  "fd-575342": {
+   "season": "2026/27",
+   "date": "2026-10-13",
+   "stage": "Fase de liga",
+   "home": "Sabah FK",
+   "away": "Slavia Praha",
+   "status": "FT",
+   "hg": 2,
+   "ag": 0
+  },
+  "fd-575343": {
+   "season": "2026/27",
+   "date": "2026-10-13",
+   "stage": "Fase de liga",
+   "home": "Inter",
+   "away": "Club Brugge",
+   "status": "FT",
+   "hg": 3,
+   "ag": 4
+  },
+  "fd-575344": {
+   "season": "2026/27",
+   "date": "2026-10-13",
+   "stage": "Fase de liga",
+   "home": "Galatasaray",
+   "away": "Barcelona",
+   "status": "FT",
+   "hg": 1,
+   "ag": 4
+  },
+  "fd-575345": {
+   "season": "2026/27",
+   "date": "2026-10-13",
+   "stage": "Fase de liga",
+   "home": "Atlético de Madrid",
+   "away": "Man United",
+   "status": "FT",
+   "hg": 2,
+   "ag": 0
+  },
+  "fd-575346": {
+   "season": "2026/27",
+   "date": "2026-10-13",
+   "stage": "Fase de liga",
+   "home": "Arsenal",
+   "away": "Lille",
+   "status": "FT",
+   "hg": 3,
+   "ag": 0
+  },
+  "fd-575347": {
+   "season": "2026/27",
+   "date": "2026-10-13",
+   "stage": "Fase de liga",
+   "home": "Viking",
+   "away": "Bayern",
+   "status": "FT",
+   "hg": 3,
+   "ag": 3
+  },
+  "fd-575348": {
+   "season": "2026/27",
+   "date": "2026-10-13",
+   "stage": "Fase de liga",
+   "home": "RB Leipzig",
+   "away": "PSV",
+   "status": "FT",
+   "hg": 1,
+   "ag": 0
+  },
+  "fd-575349": {
+   "season": "2026/27",
+   "date": "2026-10-13",
+   "stage": "Fase de liga",
+   "home": "Villarreal",
+   "away": "Napoli",
+   "status": "FT",
+   "hg": 3,
+   "ag": 1
   },
   "fd-575350": {
    "season": "2026/27",

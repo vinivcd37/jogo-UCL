@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T22:22:44Z",
+ "updated": "2026-10-20T18:53:30Z",
  "matches": {
   "fd-575323": {
    "season": "2026/27",
@@ -360,6 +360,26 @@
    "status": "FT",
    "hg": 0,
    "ag": 3
+  },
+  "fd-575359": {
+   "season": "2026/27",
+   "date": "2026-10-20",
+   "stage": "Fase de liga",
+   "home": "Sabah FK",
+   "away": "Dortmund",
+   "status": "FT",
+   "hg": 1,
+   "ag": 2
+  },
+  "fd-575360": {
+   "season": "2026/27",
+   "date": "2026-10-20",
+   "stage": "Fase de liga",
+   "home": "Fenerbahçe",
+   "away": "Slavia Praha",
+   "status": "FT",
+   "hg": 2,
+   "ag": 2
   },
   "final-2010": {
    "season": "2009/10",

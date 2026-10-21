@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T23:36:32Z",
+ "updated": "2026-10-21T19:10:15Z",
  "matches": {
   "fd-575323": {
    "season": "2026/27",
@@ -450,6 +450,96 @@
    "status": "FT",
    "hg": 4,
    "ag": 2
+  },
+  "fd-575368": {
+   "season": "2026/27",
+   "date": "2026-10-21",
+   "stage": "Fase de liga",
+   "home": "Como 1907",
+   "away": "Man United",
+   "status": "FT",
+   "hg": 4,
+   "ag": 1
+  },
+  "fd-575369": {
+   "season": "2026/27",
+   "date": "2026-10-21",
+   "stage": "Fase de liga",
+   "home": "Lille",
+   "away": "Galatasaray",
+   "status": "FT",
+   "hg": 2,
+   "ag": 4
+  },
+  "fd-575370": {
+   "season": "2026/27",
+   "date": "2026-10-21",
+   "stage": "Fase de liga",
+   "home": "Real Madrid",
+   "away": "RB Leipzig",
+   "status": "LIVE",
+   "hg": 0,
+   "ag": 0
+  },
+  "fd-575371": {
+   "season": "2026/27",
+   "date": "2026-10-21",
+   "stage": "Fase de liga",
+   "home": "Inter",
+   "away": "Shaktar",
+   "status": "LIVE",
+   "hg": 0,
+   "ag": 0
+  },
+  "fd-575372": {
+   "season": "2026/27",
+   "date": "2026-10-21",
+   "stage": "Fase de liga",
+   "home": "Bayern",
+   "away": "Arsenal",
+   "status": "LIVE",
+   "hg": 0,
+   "ag": 0
+  },
+  "fd-575373": {
+   "season": "2026/27",
+   "date": "2026-10-21",
+   "stage": "Fase de liga",
+   "home": "Club Brugge",
+   "away": "RC Lens",
+   "status": "LIVE",
+   "hg": 0,
+   "ag": 0
+  },
+  "fd-575374": {
+   "season": "2026/27",
+   "date": "2026-10-21",
+   "stage": "Fase de liga",
+   "home": "Aston Villa",
+   "away": "Viking",
+   "status": "LIVE",
+   "hg": 0,
+   "ag": 0
+  },
+  "fd-575375": {
+   "season": "2026/27",
+   "date": "2026-10-21",
+   "stage": "Fase de liga",
+   "home": "Sporting CP",
+   "away": "LASK",
+   "status": "LIVE",
+   "hg": 0,
+   "ag": 0
+  },
+  "fd-575376": {
+   "season": "2026/27",
+   "date": "2026-10-21",
+   "stage": "Fase de liga",
+   "home": "Real Betis",
+   "away": "Feyenoord",
+   "status": "LIVE",
+   "hg": 0,
+   "ag": 0
   },
   "final-2010": {
    "season": "2009/10",

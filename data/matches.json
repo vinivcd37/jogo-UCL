@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T21:13:57Z",
+ "updated": "2026-11-03T20:45:24Z",
  "matches": {
   "fd-575323": {
    "season": "2026/27",
@@ -539,6 +539,96 @@
    "away": "Feyenoord",
    "status": "FT",
    "hg": 1,
+   "ag": 0
+  },
+  "fd-575377": {
+   "season": "2026/27",
+   "date": "2026-11-03",
+   "stage": "Fase de liga",
+   "home": "Shaktar",
+   "away": "Sporting CP",
+   "status": "FT",
+   "hg": 0,
+   "ag": 1
+  },
+  "fd-575378": {
+   "season": "2026/27",
+   "date": "2026-11-03",
+   "stage": "Fase de liga",
+   "home": "Galatasaray",
+   "away": "Stuttgart",
+   "status": "FT",
+   "hg": 2,
+   "ag": 0
+  },
+  "fd-575379": {
+   "season": "2026/27",
+   "date": "2026-11-03",
+   "stage": "Fase de liga",
+   "home": "Feyenoord",
+   "away": "Inter",
+   "status": "LIVE",
+   "hg": 0,
+   "ag": 2
+  },
+  "fd-575380": {
+   "season": "2026/27",
+   "date": "2026-11-03",
+   "stage": "Fase de liga",
+   "home": "Barcelona",
+   "away": "Aston Villa",
+   "status": "LIVE",
+   "hg": 1,
+   "ag": 0
+  },
+  "fd-575381": {
+   "season": "2026/27",
+   "date": "2026-11-03",
+   "stage": "Fase de liga",
+   "home": "Atlético de Madrid",
+   "away": "Bayern",
+   "status": "LIVE",
+   "hg": 0,
+   "ag": 0
+  },
+  "fd-575382": {
+   "season": "2026/27",
+   "date": "2026-11-03",
+   "stage": "Fase de liga",
+   "home": "Villarreal",
+   "away": "PSG",
+   "status": "LIVE",
+   "hg": 0,
+   "ag": 4
+  },
+  "fd-575383": {
+   "season": "2026/27",
+   "date": "2026-11-03",
+   "stage": "Fase de liga",
+   "home": "Man United",
+   "away": "Roma",
+   "status": "LIVE",
+   "hg": 0,
+   "ag": 2
+  },
+  "fd-575384": {
+   "season": "2026/27",
+   "date": "2026-11-03",
+   "stage": "Fase de liga",
+   "home": "Bodø/Glimt",
+   "away": "Lille",
+   "status": "LIVE",
+   "hg": 0,
+   "ag": 0
+  },
+  "fd-575385": {
+   "season": "2026/27",
+   "date": "2026-11-03",
+   "stage": "Fase de liga",
+   "home": "LASK",
+   "away": "Sl. Bratislava",
+   "status": "LIVE",
+   "hg": 2,
    "ag": 0
   },
   "final-2010": {

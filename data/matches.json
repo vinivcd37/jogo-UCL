@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T20:45:24Z",
+ "updated": "2026-11-04T00:57:30Z",
  "matches": {
   "fd-575323": {
    "season": "2026/27",
@@ -567,9 +567,9 @@
    "stage": "Fase de liga",
    "home": "Feyenoord",
    "away": "Inter",
-   "status": "LIVE",
+   "status": "FT",
    "hg": 0,
-   "ag": 2
+   "ag": 3
   },
   "fd-575380": {
    "season": "2026/27",
@@ -577,8 +577,8 @@
    "stage": "Fase de liga",
    "home": "Barcelona",
    "away": "Aston Villa",
-   "status": "LIVE",
-   "hg": 1,
+   "status": "FT",
+   "hg": 3,
    "ag": 0
   },
   "fd-575381": {
@@ -587,9 +587,9 @@
    "stage": "Fase de liga",
    "home": "Atlético de Madrid",
    "away": "Bayern",
-   "status": "LIVE",
+   "status": "FT",
    "hg": 0,
-   "ag": 0
+   "ag": 2
   },
   "fd-575382": {
    "season": "2026/27",
@@ -597,9 +597,9 @@
    "stage": "Fase de liga",
    "home": "Villarreal",
    "away": "PSG",
-   "status": "LIVE",
+   "status": "FT",
    "hg": 0,
-   "ag": 4
+   "ag": 6
   },
   "fd-575383": {
    "season": "2026/27",
@@ -607,8 +607,8 @@
    "stage": "Fase de liga",
    "home": "Man United",
    "away": "Roma",
-   "status": "LIVE",
-   "hg": 0,
+   "status": "FT",
+   "hg": 3,
    "ag": 2
   },
   "fd-575384": {
@@ -617,7 +617,7 @@
    "stage": "Fase de liga",
    "home": "Bodø/Glimt",
    "away": "Lille",
-   "status": "LIVE",
+   "status": "FT",
    "hg": 0,
    "ag": 0
   },
@@ -627,8 +627,8 @@
    "stage": "Fase de liga",
    "home": "LASK",
    "away": "Sl. Bratislava",
-   "status": "LIVE",
-   "hg": 2,
+   "status": "FT",
+   "hg": 4,
    "ag": 0
   },
   "final-2010": {

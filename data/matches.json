@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T21:06:27Z",
+ "updated": "2026-11-05T01:17:15Z",
  "matches": {
   "fd-575323": {
    "season": "2026/27",
@@ -657,9 +657,9 @@
    "stage": "Fase de liga",
    "home": "RB Leipzig",
    "away": "Man City",
-   "status": "LIVE",
-   "hg": 0,
-   "ag": 1
+   "status": "FT",
+   "hg": 2,
+   "ag": 3
   },
   "fd-575389": {
    "season": "2026/27",
@@ -667,8 +667,8 @@
    "stage": "Fase de liga",
    "home": "Slavia Praha",
    "away": "Arsenal",
-   "status": "LIVE",
-   "hg": 0,
+   "status": "FT",
+   "hg": 1,
    "ag": 2
   },
   "fd-575390": {
@@ -677,9 +677,9 @@
    "stage": "Fase de liga",
    "home": "PSV",
    "away": "Club Brugge",
-   "status": "LIVE",
-   "hg": 0,
-   "ag": 1
+   "status": "FT",
+   "hg": 1,
+   "ag": 2
   },
   "fd-575391": {
    "season": "2026/27",
@@ -687,9 +687,9 @@
    "stage": "Fase de liga",
    "home": "Dortmund",
    "away": "Real Betis",
-   "status": "LIVE",
-   "hg": 0,
-   "ag": 0
+   "status": "FT",
+   "hg": 2,
+   "ag": 1
   },
   "fd-575392": {
    "season": "2026/27",
@@ -697,8 +697,8 @@
    "stage": "Fase de liga",
    "home": "Porto",
    "away": "Napoli",
-   "status": "LIVE",
-   "hg": 1,
+   "status": "FT",
+   "hg": 4,
    "ag": 1
   },
   "fd-575393": {
@@ -707,9 +707,9 @@
    "stage": "Fase de liga",
    "home": "RC Lens",
    "away": "Como 1907",
-   "status": "LIVE",
-   "hg": 0,
-   "ag": 3
+   "status": "FT",
+   "hg": 1,
+   "ag": 9
   },
   "fd-575394": {
    "season": "2026/27",
@@ -717,8 +717,8 @@
    "stage": "Fase de liga",
    "home": "Viking",
    "away": "Sabah FK",
-   "status": "LIVE",
-   "hg": 1,
+   "status": "FT",
+   "hg": 4,
    "ag": 1
   },
   "final-2010": {

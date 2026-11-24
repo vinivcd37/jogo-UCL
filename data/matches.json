@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T01:17:15Z",
+ "updated": "2026-11-24T19:55:16Z",
  "matches": {
   "fd-575323": {
    "season": "2026/27",
@@ -720,6 +720,26 @@
    "status": "FT",
    "hg": 4,
    "ag": 1
+  },
+  "fd-575395": {
+   "season": "2026/27",
+   "date": "2026-11-24",
+   "stage": "Fase de liga",
+   "home": "Galatasaray",
+   "away": "Aston Villa",
+   "status": "FT",
+   "hg": 1,
+   "ag": 0
+  },
+  "fd-575396": {
+   "season": "2026/27",
+   "date": "2026-11-24",
+   "stage": "Fase de liga",
+   "home": "Bodø/Glimt",
+   "away": "LASK",
+   "status": "FT",
+   "hg": 1,
+   "ag": 0
   },
   "final-2010": {
    "season": "2009/10",

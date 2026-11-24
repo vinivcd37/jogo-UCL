@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T19:55:16Z",
+ "updated": "2026-11-24T23:47:19Z",
  "matches": {
   "fd-575323": {
    "season": "2026/27",
@@ -737,6 +737,76 @@
    "stage": "Fase de liga",
    "home": "Bodø/Glimt",
    "away": "LASK",
+   "status": "FT",
+   "hg": 1,
+   "ag": 0
+  },
+  "fd-575397": {
+   "season": "2026/27",
+   "date": "2026-11-24",
+   "stage": "Fase de liga",
+   "home": "Real Madrid",
+   "away": "PSV",
+   "status": "FT",
+   "hg": 5,
+   "ag": 1
+  },
+  "fd-575398": {
+   "season": "2026/27",
+   "date": "2026-11-24",
+   "stage": "Fase de liga",
+   "home": "Man City",
+   "away": "Napoli",
+   "status": "FT",
+   "hg": 2,
+   "ag": 2
+  },
+  "fd-575399": {
+   "season": "2026/27",
+   "date": "2026-11-24",
+   "stage": "Fase de liga",
+   "home": "Arsenal",
+   "away": "Dortmund",
+   "status": "FT",
+   "hg": 1,
+   "ag": 1
+  },
+  "fd-575400": {
+   "season": "2026/27",
+   "date": "2026-11-24",
+   "stage": "Fase de liga",
+   "home": "Feyenoord",
+   "away": "Porto",
+   "status": "FT",
+   "hg": 0,
+   "ag": 1
+  },
+  "fd-575401": {
+   "season": "2026/27",
+   "date": "2026-11-24",
+   "stage": "Fase de liga",
+   "home": "Sl. Bratislava",
+   "away": "Real Betis",
+   "status": "FT",
+   "hg": 0,
+   "ag": 2
+  },
+  "fd-575402": {
+   "season": "2026/27",
+   "date": "2026-11-24",
+   "stage": "Fase de liga",
+   "home": "RB Leipzig",
+   "away": "RC Lens",
+   "status": "FT",
+   "hg": 3,
+   "ag": 1
+  },
+  "fd-575403": {
+   "season": "2026/27",
+   "date": "2026-11-24",
+   "stage": "Fase de liga",
+   "home": "Como 1907",
+   "away": "PAE AEK",
    "status": "FT",
    "hg": 1,
    "ag": 0
